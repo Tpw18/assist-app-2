@@ -48,3 +48,16 @@ function cerrarPanel(){
     document.getElementById("panel").style.display = "none";
     document.body.style.overflow = "auto";
 }
+const video = document.querySelector(".video-fondo");
+
+window.addEventListener("scroll", () => {
+
+    const scroll = window.scrollY;
+
+    const mover = scroll * 0.08;
+
+
+    video.style.transform =
+`translate(-50%, calc(-41.7% - ${mover}px))`;
+
+});
