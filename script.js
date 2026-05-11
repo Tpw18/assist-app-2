@@ -1,63 +1,52 @@
+const panel = document.getElementById("panel");
+const titulo = document.getElementById("panel-titulo");
+const texto = document.getElementById("panel-texto");
+const imagen = document.getElementById("panel-img");
+
+const contenido = {
+    asistencia: {
+        titulo: "Control de asistencia inteligente",
+        texto: "Registro mediante códigos QR únicos e imposibles de falsificar.",
+        img: "img/asistencia.jpg"
+    },
+
+    promedios: {
+        titulo: "Promedios automáticos",
+        texto: "Cálculos académicos precisos en tiempo real.",
+        img: "img/promedios.jpg"
+    },
+
+    gestion: {
+        titulo: "Gestión institucional avanzada",
+        texto: "Organización completa de alumnos, cursos y reportes.",
+        img: "img/gestion.jpg"
+    }
+};
+
 function abrirPanel(tipo){
 
-    const panel = document.getElementById("panel");
+    const data = contenido[tipo];
 
-    const titulo = document.getElementById("panel-titulo");
-
-    const texto = document.getElementById("panel-texto");
-
-    const imagen = document.getElementById("panel-img");
+    titulo.innerText = data.titulo;
+    texto.innerText = data.texto;
+    imagen.src = data.img;
 
     panel.style.display = "flex";
     document.body.style.overflow = "hidden";
-
-    if(tipo === "asistencia"){
-
-        titulo.innerText = "Control de asistencia";
-
-        texto.innerText =
-        "Assist-App permite registrar asistencia rápidamente y mantener control total de los alumnos con tan solo un escaneo QR unico incapaz de falsificar o modificar evitando falsas asistencias o manipulaciones maliciosaas.";
-
-        imagen.src = "img/asistencia.jpg";
-    }
-
-    if(tipo === "promedios"){
-
-        titulo.innerText = "Promedios automáticos";
-
-        texto.innerText =
-        "Calcula promedios automáticamente sin usar planillas externas o calculos innecearios, deja que Assist-App lo haga por ti con un click y solo queda revisar.";
-
-        imagen.src = "img/promedios.jpg";
-    }
-
-    if(tipo === "gestion"){
-
-        titulo.innerText = "Gestión escolar";
-
-        texto.innerText =
-        "Administra cursos, reportes y estudiantes desde un único lugar sin necesidad de reconteo frecuente o revision periodica, deja que Assist-App lo haga por ti.";
-
-        imagen.src = "img/gestion.jpg";
-    }
-
 }
 
 function cerrarPanel(){
-
-    document.getElementById("panel").style.display = "none";
+    panel.style.display = "none";
     document.body.style.overflow = "auto";
 }
+
 const video = document.querySelector(".video-fondo");
 
 window.addEventListener("scroll", () => {
+    requestAnimationFrame(() => {
+        const mover = window.scrollY * 0.08;
 
-    const scroll = window.scrollY;
-
-    const mover = scroll * 0.08;
-
-
-    video.style.transform =
-`translate(-50%, calc(-41.7% - ${mover}px))`;
-
+        video.style.transform =
+        `translate(-50%, calc(-42% - ${mover}px))`;
+    });
 });

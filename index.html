@@ -1,208 +1,137 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>Assist-App</title>
-
-    <link rel="stylesheet"
-          href="style.css">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assist-App</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="img/favicon.png">
 </head>
-
-
 
 <body>
 
+<header class="navbar">
+
+<div class="brand">
+<img src="img/favicon.png">
+<span>Assist-App</span>
+</div>
+
+<div class="nav-links">
+<a href="nosotros.html">Sobre nosotros</a>
+<a href="updates.html">Actualizaciones</a>
+<a href="contacto.html" class="boton-nav">Contacto</a>
+</div>
+
+</header>
 <div class="contenedor-video">
-    <video autoplay loop muted poster="imagen-de-carga.jpg" class="video-fondo">
+    <video autoplay loop muted class="video-fondo">
         <source src="img/background.mp4" type="video/mp4">
-        Tu navegador no soporta videos HTML5.
     </video>
 </div>
 
+<div class="overlay"></div>
 
 <section class="hero">
-
-    <div class="overlay"></div>
-
     <div class="contenido">
+
+        <div class="hero-logo">
+            <img src="img/favicon.png">
+        </div>
 
         <h1>Assist-App</h1>
 
         <p>
-            Facilita la gestión de asistencia,
-            planillas y promedios escolares.
+            Gestión académica inteligente para instituciones modernas
         </p>
 
-        <a a href="#funciones"
-   class="boton">
-
-   Explorar
-
-</a>
-
-        </a>
+        <a href="#funciones" class="boton">Explorar</a>
+        <a href="contacto.html" class="boton-secundario">Ver planes</a>
 
     </div>
+</section>
+
+<section id="funciones">
+
+<h2>Funciones principales</h2>
+
+<div class="cards">
+
+<div class="card" onclick="abrirPanel('asistencia')">
+<h3>📋 Asistencia QR</h3>
+<p>Registro seguro e inmediato.</p>
+</div>
+
+<div class="card" onclick="abrirPanel('promedios')">
+<h3>📊 Promedios automáticos</h3>
+<p>Cálculos en tiempo real.</p>
+</div>
+
+<div class="card" onclick="abrirPanel('gestion')">
+<h3>🗂️ Gestión institucional</h3>
+<p>Todo organizado desde un solo lugar.</p>
+</div>
+
+</div>
 
 </section>
+
+<div id="panel" class="panel">
+<div class="panel-contenido">
+<button class="cerrar" onclick="cerrarPanel()">← Volver</button>
+<img id="panel-img" src="">
+<h2 id="panel-titulo"></h2>
+<p id="panel-texto"></p>
+</div>
+</div>
+
+<section class="info">
+
+<h2>¿Por qué elegir Assist-App?</h2>
+
+<div class="estadisticas">
+
+<div class="stat">
+<h3>100%</h3>
+<span>Personalizable</span>
+</div>
+
+<div class="stat">
+<h3>24/7</h3>
+<span>Acceso inmediato</span>
+</div>
+
+<div class="stat">
+<h3>∞</h3>
+<span>Escalable</span>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="footer-brand">
+<img src="img/favicon.png">
+<h3>Assist-App</h3>
+</div>
+
+<p>
+Soluciones institucionales diseñadas para automatizar procesos académicos.
+</p>
+
+<div class="footer-links">
+<a href="contacto.html">Planes</a>
+<a href="#">Términos</a>
+<a href="#">Privacidad</a>
+</div>
+
+<span>© 2026 Assist-App</span>
+
+</footer>
+
 <script src="script.js"></script>
+
 </body>
-
 </html>
-<section id="funciones"
-         class="funciones">
-
-    <h2>Funciones principales</h2>
-
-    <div class="cards">
-
-</a>
-
-<div class="card"
-     onclick="abrirPanel('asistencia')">
-
-    <h3>📋 Asistencia</h3>
-
-    <p>
-        Registra asistencia rápidamente.
-    </p>
-
-</div>
-
-<div class="card"
-     onclick="abrirPanel('promedios')">
-
-    <h3>📊 Promedios</h3>
-
-    <p>
-        Calcula promedios automáticamente.
-    </p>
-
-</div>
-
-<div class="card"
-     onclick="abrirPanel('gestion')">
-
-    <h3>🗂️ Gestión</h3>
-
-    <p>
-        Organiza alumnos y cursos.
-    </p>
-
-</div>
-
-<div id="panel"
-     class="panel">
-
-    <div class="panel-contenido">
-
-        <button onclick="cerrarPanel()"
-                class="cerrar">
-
-            ← Volver
-
-        </button>
-
-        <img id="panel-img"
-             src="">
-
-        <h2 id="panel-titulo"></h2>
-
-        <p id="panel-texto"></p>
-
-    </div>
-
-</div>
-
-<section class="info">
-
-    <div class="info-texto">
-
-        <h2>
-            Una nueva forma de gestionar escuelas
-        </h2>
-
-        <p>
-            Assist-App fue diseñada para ayudar a
-            preceptores e instituciones educativas
-            a optimizar tiempo y reducir tareas repetitivas.
-        </p>
-
-        <p>
-            Desde asistencia hasta cálculo automático
-            de promedios, todo se administra desde
-            una interfaz rápida, moderna y sencilla.
-        </p>
-
-    </div>
-
-    <div class="estadisticas">
-
-        <div class="stat">
-
-            <h3>+500</h3>
-
-            <span>Alumnos gestionados</span>
-
-        </div>
-
-        <div class="stat">
-
-            <h3>95%</h3>
-
-            <span>Reducción de tiempo</span>
-
-        </div>
-
-        <div class="stat">
-
-            <h3>24/7</h3>
-
-            <span>Acceso rápido</span>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="info">
-
-    <div class="info-texto">
-
-        <h2>
-            ¿Quiénes somos?
-        </h2>
-
-        <p>
-            Assist-App es un software u aplicacion desarollada de forma independiente con el objetivo de escuelas, univerisdades u incluso empresas. assist-app esta diseñado para tomar assistencias, crear planillas, conteos y etc en base a esos datos, puedes contactarnos en nuestras redes oficiales de instagram, tiktok o mediante nuestro correo electronico personal 
-        </p>
-
-    </div>
-</section>
-
-     
-<section class="info">
-
-    <div class="info-texto">
-     
- <h2>
-         ¿Cómo contratar assist-app? ¿Cómo funciona?
-        </h2>
-
-        <p>
-            Al contratar nuestros servicios nosotros creamos la version del software segun los requisitos solicitados por la institucion, organizacion u entidad, NO todas las versiones u modelos de assist-app son iguales dado que los criterios de personalizacion u funcionamiento varian segun el solicitante, nos ajustamos a los gustos del solicitante.
-        </p>
-
-    </div>
-</section>
-
-
