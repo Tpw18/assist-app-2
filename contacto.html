@@ -1,127 +1,183 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Licencias | Assist-App</title>
-<link rel="stylesheet" href="style.css">
-<link rel="icon" href="favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Planes y contacto de Assist-App. Licencias institucionales con soporte oficial y actualizaciones permanentes.">
+    <title>Planes y contacto | Assist-App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<header class="navbar">
+    <div class="particles" aria-hidden="true"></div>
 
-<div class="brand">
-<img src="img/favicon.png">
-<span>Assist-App</span>
-</div>
+    <header class="navbar">
+        <a href="index.html" class="brand">
+            <img src="img/favicon.png" alt="Logo Assist-App" width="48" height="48">
+            <span>Assist-App</span>
+        </a>
+        <nav class="nav-links" aria-label="Navegación principal">
+            <a href="index.html#funciones">Funciones</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="updates.html">Actualizaciones</a>
+            <a href="#contacto" class="boton-nav">Contacto</a>
+        </nav>
+    </header>
 
-<div class="nav-links">
-<a href="nosotros.html">Sobre nosotros</a>
-<a href="updates.html">Actualizaciones</a>
-<a href="contacto.html" class="boton-nav">Contacto</a>
-</div>
+    <main>
 
-</header>
+        <section class="planes-page" id="planes">
 
-<section class="planes">
+            <h1>Licencias institucionales</h1>
 
-<h1>Licencias institucionales</h1>
+            <p class="sub">
+                Soluciones escalables con soporte oficial
+                y actualizaciones permanentes.
+            </p>
 
-<p class="sub">
-Soluciones escalables con soporte oficial y actualizaciones permanentes
-</p>
+            <div class="planes-grid">
 
-<div class="cards">
+                <article class="card card--plan">
+                    <h2 class="plan-title">Starter Academic</h2>
+                    <p class="plan-price">USD 89/mes</p>
+                    <ul class="plan-features">
+                        <li>Hasta 500 alumnos</li>
+                        <li>Soporte estándar</li>
+                        <li>Reportes esenciales</li>
+                    </ul>
+                    <a href="https://wa.me/5491176590818?text=Hola%2C%20quiero%20el%20plan%20Starter%20Academic" class="boton" target="_blank" rel="noopener noreferrer">
+                        Solicitar
+                    </a>
+                </article>
 
-<div class="card">
-<h2 class="plan-title">Starter Academic</h2>
-<h3>USD 89/mes</h3>
-<p>Hasta 500 alumnos</p>
-<p>Soporte estándar</p>
-<p>Reportes esenciales</p>
+                <article class="card card--plan premium">
+                    <span class="plan-badge">Más elegido</span>
+                    <h2 class="plan-title">Institutional Pro</h2>
+                    <p class="plan-price">USD 229/mes</p>
+                    <ul class="plan-features">
+                        <li>Alumnos ilimitados</li>
+                        <li>Panel avanzado</li>
+                        <li>Promedios automáticos</li>
+                        <li>Soporte prioritario</li>
+                    </ul>
+                    <a href="https://wa.me/5491176590818?text=Hola%2C%20quiero%20el%20plan%20Institutional%20Pro" class="boton" target="_blank" rel="noopener noreferrer">
+                        Contratar
+                    </a>
+                </article>
 
-<a href="https://wa.me/TUNUMERO" class="boton">
-Solicitar
-</a>
-</div>
+                <article class="card card--plan">
+                    <h2 class="plan-title">Enterprise Custom</h2>
+                    <p class="plan-price">Desde USD 490</p>
+                    <ul class="plan-features">
+                        <li>Integraciones dedicadas</li>
+                        <li>Infraestructura exclusiva</li>
+                        <li>Implementación asistida</li>
+                    </ul>
+                    <a href="https://wa.me/5491176590818?text=Hola%2C%20quiero%20cotizar%20Enterprise%20Custom" class="boton" target="_blank" rel="noopener noreferrer">
+                        Cotizar
+                    </a>
+                </article>
 
-<div class="card premium">
-<div class="badge">MÁS ELEGIDO</div>
+            </div>
 
-<h2 class="plan-title">Institutional Pro</h2>
-<h3>USD 229/mes</h3>
+            <div class="pagos">
+                <h2>Métodos de pago</h2>
+                <div class="metodos">
+                    <span>Visa</span>
+                    <span>Mastercard</span>
+                    <span>PayPal</span>
+                    <span>Mercado Pago</span>
+                    <span>Transferencia bancaria</span>
+                </div>
+            </div>
 
-<p>Alumnos ilimitados</p>
-<p>Panel avanzado</p>
-<p>Promedios automáticos</p>
-<p>Soporte prioritario</p>
+            <div class="contacto-section" id="contacto">
 
-<a href="https://wa.me/TUNUMERO" class="boton">
-Contratar
-</a>
-</div>
+                <h2>Contacto comercial</h2>
 
-<div class="card">
-<h2 class="plan-title">Enterprise Custom</h2>
-<h3>Desde USD 490</h3>
+                <div class="contacto-grid">
 
-<p>Integraciones dedicadas</p>
-<p>Infraestructura exclusiva</p>
-<p>Implementación asistida</p>
+                    <div class="contacto-info">
+                        <h3>Datos de contacto</h3>
+                        <ul>
+                            <li>
+                                WhatsApp:
+                                <a href="https://wa.me/5491176590818" target="_blank" rel="noopener noreferrer">
+                                    +54 9 11 7659-0818
+                                </a>
+                            </li>
+                            <li>
+                                Email:
+                                <a href="mailto:contactoassistapp@gmail.com">contactoassistapp@gmail.com</a>
+                            </li>
+                            <li>
+                                Instagram:
+                                <a href="https://instagram.com/assistapp2026" target="_blank" rel="noopener noreferrer">
+                                    @assistapp2026
+                                </a>
+                            </li>
+                            <li>Horario: Lunes a Viernes · 09:00–19:00</li>
+                        </ul>
+                    </div>
 
-<a href="https://wa.me/TUNUMERO" class="boton">
-Cotizar
-</a>
-</div>
+                    <form class="contacto-form" id="contact-form" novalidate>
 
-</div>
+                        <div class="form-group">
+                            <label for="nombre">Nombre *</label>
+                            <input type="text" id="nombre" name="nombre" required autocomplete="name" placeholder="Tu nombre">
+                        </div>
 
-<div class="pagos">
-<h2>Métodos de pago</h2>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required autocomplete="email" placeholder="tu@institucion.edu">
+                        </div>
 
-<div class="metodos">
-<span>Visa</span>
-<span>Mastercard</span>
-<span>PayPal</span>
-<span>Mercado Pago</span>
-<span>Transferencia bancaria</span>
-</div>
-</div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje *</label>
+                            <textarea id="mensaje" name="mensaje" required placeholder="Contanos sobre tu institución y necesidades"></textarea>
+                        </div>
 
-<div class="contacto-box">
+                        <button type="submit" class="boton">Enviar consulta</button>
 
-<h2>Contacto comercial</h2>
+                    </form>
 
-<p>WhatsApp: +54 9 11 7659 0818</p>
-<p>Email: contactoassistapp@gmail.com</p>
-<p>Instagram: @assistapp2026</p>
-<p>Lunes a Viernes · 09:00–19:00</p>
+                </div>
 
-</div>
+            </div>
 
-<div class="legal-buttons">
-<a href="terminos.html" class="boton-secundario">
-Términos y condiciones
-</a>
+            <div class="legal-buttons">
+                <a href="terminos.html" class="boton-secundario">Términos y condiciones</a>
+                <a href="cookies.html" class="boton-secundario">Política de cookies</a>
+            </div>
 
-<a href="cookies.html" class="boton-secundario">
-Política de cookies
-</a>
-</div>
+        </section>
 
-</section>
+    </main>
 
-<footer>
-<div class="footer-brand">
-<img src="img/logo.png">
-<h3>Assist-App</h3>
-</div>
+    <footer>
 
-<p>Software institucional seguro y profesional</p>
+        <div class="footer-brand">
+            <img src="img/favicon.png" alt="Logo Assist-App" width="50" height="50">
+            <h3>Assist-App</h3>
+        </div>
 
-</footer>
+        <p>Software institucional seguro y profesional.</p>
+
+        <nav class="footer-links" aria-label="Enlaces del pie de página">
+            <a href="index.html">Inicio</a>
+            <a href="terminos.html">Términos</a>
+            <a href="cookies.html">Privacidad</a>
+        </nav>
+
+        <span>© 2026 Assist-App</span>
+
+    </footer>
+
+    <script src="js/main.js" defer></script>
 
 </body>
 </html>

@@ -1,137 +1,355 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Assist-App</title>
-<link rel="stylesheet" href="style.css">
-<link rel="icon" type="image/png" href="img/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Assist-App — Plataforma de gestión académica con control de asistencia QR, reportes automáticos y estadísticas en tiempo real.">
+    <title>Assist-App | Gestión académica del futuro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<header class="navbar">
+    <div class="particles" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
 
-<div class="brand">
-<img src="img/favicon.png">
-<span>Assist-App</span>
-</div>
+    <header class="navbar">
+        <a href="index.html" class="brand">
+            <img src="img/favicon.png" alt="Logo Assist-App" width="48" height="48">
+            <span>Assist-App</span>
+        </a>
+        <nav class="nav-links" aria-label="Navegación principal">
+            <a href="#funciones">Funciones</a>
+            <a href="contacto.html">Planes</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html" class="boton-nav">Solicitar demo</a>
+        </nav>
+    </header>
 
-<div class="nav-links">
-<a href="nosotros.html">Sobre nosotros</a>
-<a href="updates.html">Actualizaciones</a>
-<a href="contacto.html" class="boton-nav">Contacto</a>
-</div>
+    <div class="overlay" aria-hidden="true"></div>
 
-</header>
-<div class="contenedor-video">
-    <video autoplay loop muted class="video-fondo">
-        <source src="img/background.mp4" type="video/mp4">
-    </video>
-</div>
+    <main>
 
-<div class="overlay"></div>
+        <!-- Hero -->
+        <section class="hero" aria-labelledby="hero-title">
 
-<section class="hero">
-    <div class="contenido">
+            <div class="hero-left">
 
-        <div class="hero-logo">
-            <img src="img/favicon.png">
+                <span class="badge">Plataforma académica moderna</span>
+
+                <h1 id="hero-title">
+                    La gestión académica
+                    del futuro.
+                </h1>
+
+                <p>
+                    Controlá asistencia mediante QR,
+                    administrá alumnos,
+                    automatizá reportes
+                    y obtené estadísticas en tiempo real.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#funciones" class="boton">Ver características</a>
+                    <a href="contacto.html" class="boton-secundario">Solicitar demo</a>
+                </div>
+
+                <div class="hero-stats" aria-label="Estadísticas destacadas">
+                    <div>
+                        <strong>5000+</strong>
+                        <span>Registros</span>
+                    </div>
+                    <div>
+                        <strong>99.9%</strong>
+                        <span>Disponibilidad</span>
+                    </div>
+                    <div>
+                        <strong>24/7</strong>
+                        <span>Acceso</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="dashboard-preview" aria-label="Vista previa del panel">
+
+                <div class="dashboard-navbar">
+                    <div class="dots" aria-hidden="true">
+                        <span></span><span></span><span></span>
+                    </div>
+                    Assist-App Dashboard
+                </div>
+
+                <div class="dashboard-content">
+
+                    <div class="dashboard-card">
+                        <h3>92%</h3>
+                        <span>Asistencia</span>
+                        <div class="mini-chart" aria-hidden="true">
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <h3>1248</h3>
+                        <span>Alumnos</span>
+                        <div class="mini-chart" aria-hidden="true">
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <h3>48</h3>
+                        <span>Cursos</span>
+                        <div class="mini-chart" aria-hidden="true">
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-card">
+                        <h3>99.9%</h3>
+                        <span>Disponibilidad</span>
+                        <div class="mini-chart" aria-hidden="true">
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Funciones -->
+        <section id="funciones" aria-labelledby="funciones-title">
+
+            <h2 id="funciones-title">Todo lo que necesitás</h2>
+
+            <p class="sub">
+                Diseñado para instituciones que buscan
+                automatizar procesos académicos.
+            </p>
+
+            <div class="cards">
+
+                <div class="card" data-panel="asistencia" role="button" tabindex="0" aria-label="Ver detalles de Asistencia QR">
+                    <h3>📋 Asistencia QR</h3>
+                    <p>Registro rápido y seguro.</p>
+                </div>
+
+                <div class="card" data-panel="promedios" role="button" tabindex="0" aria-label="Ver detalles de Promedios automáticos">
+                    <h3>📊 Promedios automáticos</h3>
+                    <p>Cálculos en tiempo real.</p>
+                </div>
+
+                <div class="card" data-panel="gestion" role="button" tabindex="0" aria-label="Ver detalles de Gestión institucional">
+                    <h3>🗂 Gestión institucional</h3>
+                    <p>Todo centralizado.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Cómo funciona -->
+        <section class="steps" aria-labelledby="steps-title">
+
+            <h2 id="steps-title">Cómo funciona</h2>
+
+            <div class="steps-grid">
+
+                <div class="step">
+                    <span aria-hidden="true">01</span>
+                    <h3>Crear cursos</h3>
+                    <p>Configurá cursos y alumnos en minutos.</p>
+                </div>
+
+                <div class="step">
+                    <span aria-hidden="true">02</span>
+                    <h3>Generar QR</h3>
+                    <p>El sistema crea códigos únicos automáticamente.</p>
+                </div>
+
+                <div class="step">
+                    <span aria-hidden="true">03</span>
+                    <h3>Obtener reportes</h3>
+                    <p>Accedé a estadísticas y reportes en tiempo real.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Showcase -->
+        <section class="showcase" aria-labelledby="showcase-title">
+
+            <h2 id="showcase-title">Todo centralizado</h2>
+
+            <div class="showcase-box">
+
+                <div class="showcase-card">
+                    <h3>Asistencia</h3>
+                    <p>Control en tiempo real mediante QR.</p>
+                </div>
+
+                <div class="showcase-card">
+                    <h3>Alumnos</h3>
+                    <p>Gestión completa de legajos académicos.</p>
+                </div>
+
+                <div class="showcase-card">
+                    <h3>Estadísticas</h3>
+                    <p>Información instantánea para la toma de decisiones.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Resultados -->
+        <section class="info" aria-labelledby="info-title">
+
+            <h2 id="info-title">Resultados reales</h2>
+
+            <div class="estadisticas">
+
+                <div class="stat">
+                    <h3>80%</h3>
+                    <span>Menos trabajo administrativo</span>
+                </div>
+
+                <div class="stat">
+                    <h3>99.9%</h3>
+                    <span>Disponibilidad</span>
+                </div>
+
+                <div class="stat">
+                    <h3>24/7</h3>
+                    <span>Acceso desde cualquier lugar</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Métricas animadas -->
+        <section class="metrics" aria-label="Métricas de la plataforma">
+
+            <div class="metric">
+                <h3 class="counter" data-target="5000">0</h3>
+                <p>Asistencias registradas</p>
+            </div>
+
+            <div class="metric">
+                <h3 class="counter" data-target="1200">0</h3>
+                <p>Alumnos gestionados</p>
+            </div>
+
+            <div class="metric">
+                <h3 class="counter" data-target="50">0</h3>
+                <p>Instituciones activas</p>
+            </div>
+
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq" aria-labelledby="faq-title">
+
+            <h2 id="faq-title">Preguntas frecuentes</h2>
+
+            <div class="faq-item">
+                <button class="faq-btn" aria-expanded="false">
+                    ¿Se puede usar desde celular?
+                </button>
+                <div class="faq-content">
+                    Sí, funciona en cualquier dispositivo moderno.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-btn" aria-expanded="false">
+                    ¿Requiere instalación?
+                </button>
+                <div class="faq-content">
+                    No, funciona completamente desde el navegador.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-btn" aria-expanded="false">
+                    ¿Puede adaptarse a mi institución?
+                </button>
+                <div class="faq-content">
+                    Sí, el sistema es totalmente personalizable.
+                </div>
+            </div>
+
+        </section>
+
+        <!-- CTA -->
+        <section class="cta" aria-labelledby="cta-title">
+
+            <h2 id="cta-title">
+                Transformá la gestión
+                de tu institución.
+            </h2>
+
+            <p>
+                Empezá a digitalizar procesos académicos hoy.
+            </p>
+
+            <a href="contacto.html" class="boton">Solicitar demo</a>
+
+        </section>
+
+    </main>
+
+    <!-- Panel modal -->
+    <div id="panel" class="panel" aria-labelledby="panel-titulo" aria-hidden="true">
+
+        <div class="panel-contenido">
+
+            <button class="cerrar" type="button" aria-label="Cerrar panel">
+                ← Volver
+            </button>
+
+            <img id="panel-img" src="" alt="">
+
+            <h2 id="panel-titulo"></h2>
+
+            <p id="panel-texto"></p>
+
         </div>
 
-        <h1>Assist-App</h1>
+    </div>
+
+    <footer>
+
+        <div class="footer-brand">
+            <img src="img/favicon.png" alt="Logo Assist-App" width="50" height="50">
+            <h3>Assist-App</h3>
+        </div>
 
         <p>
-            Gestión académica inteligente para instituciones modernas
+            Soluciones académicas modernas
+            para instituciones educativas.
         </p>
 
-        <a href="#funciones" class="boton">Explorar</a>
-        <a href="contacto.html" class="boton-secundario">Ver planes</a>
+        <nav class="footer-links" aria-label="Enlaces del pie de página">
+            <a href="contacto.html">Contacto</a>
+            <a href="terminos.html">Términos</a>
+            <a href="cookies.html">Privacidad</a>
+            <a href="updates.html">Actualizaciones</a>
+        </nav>
 
-    </div>
-</section>
+        <span>© 2026 Assist-App</span>
 
-<section id="funciones">
+    </footer>
 
-<h2>Funciones principales</h2>
-
-<div class="cards">
-
-<div class="card" onclick="abrirPanel('asistencia')">
-<h3>📋 Asistencia QR</h3>
-<p>Registro seguro e inmediato.</p>
-</div>
-
-<div class="card" onclick="abrirPanel('promedios')">
-<h3>📊 Promedios automáticos</h3>
-<p>Cálculos en tiempo real.</p>
-</div>
-
-<div class="card" onclick="abrirPanel('gestion')">
-<h3>🗂️ Gestión institucional</h3>
-<p>Todo organizado desde un solo lugar.</p>
-</div>
-
-</div>
-
-</section>
-
-<div id="panel" class="panel">
-<div class="panel-contenido">
-<button class="cerrar" onclick="cerrarPanel()">← Volver</button>
-<img id="panel-img" src="">
-<h2 id="panel-titulo"></h2>
-<p id="panel-texto"></p>
-</div>
-</div>
-
-<section class="info">
-
-<h2>¿Por qué elegir Assist-App?</h2>
-
-<div class="estadisticas">
-
-<div class="stat">
-<h3>100%</h3>
-<span>Personalizable</span>
-</div>
-
-<div class="stat">
-<h3>24/7</h3>
-<span>Acceso inmediato</span>
-</div>
-
-<div class="stat">
-<h3>∞</h3>
-<span>Escalable</span>
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-<div class="footer-brand">
-<img src="img/favicon.png">
-<h3>Assist-App</h3>
-</div>
-
-<p>
-Soluciones institucionales diseñadas para automatizar procesos académicos.
-</p>
-
-<div class="footer-links">
-<a href="contacto.html">Planes</a>
-<a href="#">Términos</a>
-<a href="#">Privacidad</a>
-</div>
-
-<span>© 2026 Assist-App</span>
-
-</footer>
-
-<script src="script.js"></script>
+    <script src="js/main.js" defer></script>
 
 </body>
 </html>
