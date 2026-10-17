@@ -17,7 +17,7 @@ const PANEL_CONTENT = {
     promedios: {
         titulo: 'Promedios automáticos',
         texto: 'Cálculos académicos precisos en tiempo real.',
-        img: 'img/promedios.jpg'
+        img: 'img/gestion.jpg'
     },
     gestion: {
         titulo: 'Gestión institucional avanzada',
